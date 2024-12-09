@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Przetłumacz tekst</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <textarea name="translate" placeholder="Wpisz tekst do przetłumaczenia"></textarea><br>
+        <select name="language">
+            <option value="en">Angielski</option>
+            <option value="pl">Polski</option>
+            <option value="de">Niemiecki</option>
+        </select><br>
+        <button type="submit">Tłumacz</button>
+    </form>
+    {% if translation %}
+        <h2>Przetłumaczone:</h2>
+        <p>{{ translation }}</p>
+    {% endif %}
+</body>
+</html>
