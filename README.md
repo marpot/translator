@@ -1,6 +1,3 @@
----
-
-```markdown
 # 🌍 Django Translator Application
 
 A user-friendly web application built with Django that leverages the Google Translate API to provide quick and accurate text translations.
