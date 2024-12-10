@@ -101,6 +101,3 @@ Follow the steps below to set up and run the application on your local machine:
 ---
 
 ### 🎉 Enjoy translating with Django Translator Application!
-```
-
----
