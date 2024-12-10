@@ -21,7 +21,9 @@ Follow these steps to set up the application locally:
 
 1. Clone the repository:
 
-   ```bash
+
+   ```
+   bash
    git clone https://github.com/yourusername/translator-app.git
    cd translator-app
    ```
